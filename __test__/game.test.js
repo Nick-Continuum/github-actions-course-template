@@ -6,16 +6,15 @@ describe('App', () => {
     return new Promise((resolve, reject) => {
       fs.readFile('./public/main.js', 'utf8', (err, data) => {
         if (err) {
-          reject(err);
+          reject(err)
         } else {
-          expect(data).toMatchSnapshot();
-          resolve();
+          expect(data).toMatchSnapshot()
+          resolve()
         }
-      });
-    });
-  });
-});
-
+      })
+    })
+  })
+})
 
 describe('Game', () => {
   let game, p1, p2
